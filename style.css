@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111111;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* utility classes */
+
+.flex {
+  display: flex;
+}
+
+[alt="brand-logo"] {
+  height: 40px;
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg)
+    saturate(600%) contrast(1);
+}
+
+.container {
+  margin: 0 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 30px;
+  list-style: none;
+  font-weight: 600;
+}
+
+header nav li:nth-child(1)::after,
+header nav li:nth-child(5)::after {
+  display: inline-block;
+  content: "▼";
+  margin: 8px;
+  font-size: 0.7em;
+}
+
+.intro [alt="model"] {
+  height: 500px;
+}
+
+.intro .text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+}
+
+.intro h1 {
+  color: #c91b28;
+}
+
+.intro .role {
+  font-size: 4em;
+  margin: 10px 0;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.intro p {
+  line-height: 1.5em;
+}
+
+.primary-btn {
+  background-color: #c91b28;
+  padding: 0.8em 1.5em;
+  width: fit-content;
+  margin: 40px 0;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.works {
+  background: linear-gradient(
+    to right,
+    #181818,
+    #181818 50%,
+    transparent 50%,
+    transparent
+  );
+}
+
+.card-group {
+  padding: 80px 0;
+  gap: 2em;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  padding: 2em;
+  background-color: #1e1e1e;
+}
+
+.card h2 {
+  margin: 20px 0;
+  font-size: 1.5em;
+}
+
+.card p {
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+
+a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #c91b28;
+}
+
+a::after {
+  content: "➜";
+  margin-left: 10px;
+}
+
+.red {
+  background-color: #c91b28;
+  color: #ffffff;
+}
+
+.red a {
+  color: #ffffff;
+}
+
+/* expirience-wrapper */
+
+.expirience-wrapper {
+  gap: 1.5em;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.left-exp-col {
+  display: flex;
+  align-items: center;
+}
+
+.left-exp-col p {
+  display: block;
+  text-align: center;
+}
+
+.red-text {
+  color: #c91b28;
+}
+
+.lg-text-1 {
+  font-size: 5em;
+  font-weight: 700;
+}
+
+.sm-text-1 {
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.right-exp-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+}
+
+.sm-card {
+  display: flex;
+  background-color: #1e1e1e;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm-card p {
+  padding: 1.5em 4em;
+  text-align: center;
+}
+
+.lg-text-2 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.sm-text-2 {
+  font-size: 1.2em;
+}
+
+/* projects-wrapper */
+
+.projects-wrapper {
+  padding: 60px 100px;
+}
+
+.projects-wrapper .primary-btn {
+  font-size: 1em;
+  margin-left: auto;
+}
+
+.project-title {
+  align-items: center;
+}
+
+.project-title h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.project-title p {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin-top: 5px;
+}
+
+/* projects-wrapper */
+
+.project-cards {
+  padding: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.project-card img {
+  display: block;
+  padding: 4em 2em;
+  background-color: #1e1e1e;
+}
+
+.project-card h2 {
+  margin-top: 20px;
+}
+
+.working {
+  margin-top: 50px;
+  background-color: #1e1e1e;
+  padding: 5em;
+  align-items: center;
+}
+
+.working h2 {
+  font-size: 3em;
+  width: 600px;
+}
+
+.working p {
+  width: 600px;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+.working .primary-btn {
+  margin-left: 100px;
+}
+
+main nav {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  position: relative;
+  padding: 20px 60;
+  background-color: #1e1e1e;
+}
+
+footer [alt="brand-logo"] {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+}
+
+footer .socials {
+  display: flex;
+  gap: 1.5em;
+}
