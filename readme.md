@@ -17,7 +17,7 @@ Made by **Aditya Kadali**
 
 - In this project I learned to combine flex and grid to achive the look we wanted.
 - Learned to use gradients and create interesting backgrounds using them.
-- Learned to use utility classes more effectively.
+- Learned to use CSS utility classes more effectively.
 
 ## Time taken:
 
