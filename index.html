@@ -19,14 +19,30 @@
             <li>Contact</li>
             <li>Other Page</li>
           </ul>
+          <div class="menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </div>
         </nav>
       </div>
     </header>
     <main>
       <!-- intro section -->
       <section class="intro">
-        <div class="container flex">
-          <img src="./images/model.png" alt="model" />
+        <div class="intro container flex">
+          <div><img src="./images/model.png" alt="model" /></div>
           <div class="text-box">
             <h1>Hello I'm Aurthur</h1>
             <p class="role">visual designer</p>
@@ -141,38 +157,22 @@
           </div>
           <div class="project-cards">
             <div class="project-card">
-              <img
-                src="./images/projects/vintage.jpg"
-                width="500px"
-                alt="vintage"
-              />
+              <img src="./images/projects/vintage.jpg" alt="vintage" />
               <h2>The Vintage</h2>
               <a href="#">Know more</a>
             </div>
             <div class="project-card">
-              <img
-                src="./images/projects/foodsa.jpg"
-                width="500px"
-                alt="vintage"
-              />
+              <img src="./images/projects/foodsa.jpg" alt="vintage" />
               <h2>Foodasa</h2>
               <a href="#">Know more</a>
             </div>
             <div class="project-card">
-              <img
-                src="./images/projects/macro.jpg"
-                width="500px"
-                alt="vintage"
-              />
+              <img src="./images/projects/macro.jpg" alt="vintage" />
               <h2>Macro Accent</h2>
               <a href="#">Know more</a>
             </div>
             <div class="project-card">
-              <img
-                src="./images/projects/mozaik.jpg"
-                width="500px"
-                alt="vintage"
-              />
+              <img src="./images/projects/mozaik.jpg" alt="vintage" />
               <h2>Mozik</h2>
               <a href="#">Know more</a>
             </div>
@@ -204,12 +204,14 @@
     </main>
 
     <!-- footer -->
-    <footer>
-      <img src="./images/white-logo.png" alt="brand-logo" />
-      <div class="socials">
-        <img src="./images/facebook.png" alt="facebook" />
-        <img src="./images/twitter.png" alt="twitter" />
-        <img src="./images/youtube.png" alt="youtube" />
+    <footer class="">
+      <div class="container flex footer-container">
+        <img src="./images/white-logo.png" alt="brand-logo" />
+        <div class="socials">
+          <img src="./images/facebook.png" alt="facebook" />
+          <img src="./images/twitter.png" alt="twitter" />
+          <img src="./images/youtube.png" alt="youtube" />
+        </div>
       </div>
     </footer>
   </body>

@@ -27,18 +27,43 @@ body {
 }
 
 .container {
-  margin: 0 60px;
+  margin: 0 2.5rem;
+  margin: auto;
+  max-width: 1280px;
+}
+
+.menu {
+  display: block;
+}
+
+.menu svg {
+  height: 1.5rem;
 }
 
 nav {
   display: flex;
+  padding-inline: 1rem;
+  height: 5rem;
   justify-content: space-between;
   align-items: center;
 }
 
+nav ul {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .menu {
+    display: none;
+  }
+  nav ul {
+    display: block;
+  }
+}
+
 nav li {
   display: inline-block;
-  margin: 30px;
+  margin: 0 30px;
   list-style: none;
   font-weight: 600;
 }
@@ -51,6 +76,17 @@ header nav li:nth-child(5)::after {
   font-size: 0.7em;
 }
 
+.intro {
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    flex-direction: row;
+  }
+}
+
 .intro [alt="model"] {
   height: 500px;
 }
@@ -59,7 +95,7 @@ header nav li:nth-child(5)::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 600px;
+  max-width: 600px;
 }
 
 .intro h1 {
@@ -101,9 +137,10 @@ header nav li:nth-child(5)::after {
 }
 
 .card-group {
-  padding: 80px 0;
-  gap: 2em;
+  padding: 5rem 0;
+  gap: 2rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -149,6 +186,7 @@ a::after {
 
 .expirience-wrapper {
   gap: 1.5em;
+  flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 60px;
 }
@@ -181,14 +219,22 @@ a::after {
 .right-exp-col {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2em;
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .sm-card {
+  grid-column: span 2;
   display: flex;
   background-color: #1e1e1e;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .sm-card {
+    grid-column: span 1;
+  }
 }
 
 .sm-card p {
@@ -208,16 +254,32 @@ a::after {
 /* projects-wrapper */
 
 .projects-wrapper {
-  padding: 60px 100px;
+  padding: 2.5rem 5rem;
 }
 
 .projects-wrapper .primary-btn {
   font-size: 1em;
-  margin-left: auto;
+  margin: auto;
 }
 
 .project-title {
+  gap: 1.5rem;
+  text-align: center;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .project-title {
+    text-align: start;
+    justify-content: start;
+    flex-direction: row;
+  }
+
+  .projects-wrapper .primary-btn {
+    margin-left: auto;
+  }
 }
 
 .project-title h1 {
@@ -244,6 +306,8 @@ a::after {
 }
 
 .project-card img {
+  width: 100%;
+  max-width: 500px;
   display: block;
   padding: 4em 2em;
   background-color: #1e1e1e;
@@ -254,19 +318,21 @@ a::after {
 }
 
 .working {
+  gap: 1.5rem;
   margin-top: 50px;
   background-color: #1e1e1e;
-  padding: 5em;
+  flex-wrap: wrap;
+  padding: 2rem;
   align-items: center;
 }
 
 .working h2 {
-  font-size: 3em;
-  width: 600px;
+  font-size: 2.5em;
+  max-width: 600px;
 }
 
 .working p {
-  width: 600px;
+  max-width: 600px;
   line-height: 1.5em;
   margin-top: 20px;
 }
@@ -281,19 +347,18 @@ main nav {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  position: relative;
-  padding: 20px 60;
   background-color: #1e1e1e;
 }
 
+.footer-container {
+  height: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2rem;
+}
+
 footer [alt="brand-logo"] {
-  position: absolute;
-  top: 40px;
-  left: 100px;
+  height: 2rem;
 }
 
 footer .socials {
